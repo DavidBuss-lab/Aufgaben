@@ -8,15 +8,14 @@ public class Divisionscheck {
         int divisor = sc.nextInt();
         System.out.println("Bis zu welcher Zahl?");
         int max = sc1.nextInt();
-        int Zahl = 0;
-        int Ergebnis = Zahl / divisor;
+        int Ergebnis = 0;
         while (Ergebnis <= max)
         {
             if(Ergebnis % divisor == 0){
-            System.out.println(Ergebnis);
-            Ergebnis = Ergebnis + 1;}
-                else{
-                    Ergebnis = Ergebnis + 1;
+                System.out.println(Ergebnis);
+                Ergebnis = Ergebnis + 1;}
+            else{
+                Ergebnis = Ergebnis + 1;
+            }
         }
-    }
-}}
+    }}
