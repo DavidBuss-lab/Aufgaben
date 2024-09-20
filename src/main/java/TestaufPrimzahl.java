@@ -8,17 +8,21 @@ public class TestaufPrimzahl {
         long zahl = sc.nextLong();
         int Ergebnis = 2;
         while (Ergebnis < zahl) {
-            if (zahl % Ergebnis == 0) {
+            while (zahl % Ergebnis == 0) {
                 bool = false;
                 Ergebnis = Ergebnis + 1;
-            } else {
-                Ergebnis = Ergebnis + 1;
             }
+            Ergebnis = Ergebnis + 1;
         }
-        if (bool) {
-            System.out.println("Es handelt sich um eine Primahl");
-        } else {
+        while (bool) {
+            System.out.println("Es handelt sich um eine Primzahl");
+            break;
+        }
+        while (!bool) {
             System.out.println("Es handelt sich um keine Primzahl");
+            break;
         }
     }
 }
+
+
