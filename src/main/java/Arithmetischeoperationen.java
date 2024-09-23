@@ -1,4 +1,4 @@
-public class ArithmetischeOperationen {
+public class Arithmetischeoperationen {
     public static void main(String[] args) {
         int Var1 = 10;
         int Var2 = 10;
