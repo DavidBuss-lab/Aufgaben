@@ -1,9 +1,11 @@
+package w01;
+
 import java.util.Scanner;
 
 public class Primfaktorzerlegung {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Bitte eine Zahl für die Primfaktorzerlegung eingeben:");
+        System.out.println("Bitte eine Zahl für die w01.Primfaktorzerlegung eingeben:");
         long zahl = sc.nextLong();
         long ergebnis = 0;
         long multiplikator1 = 2;
@@ -75,7 +77,7 @@ public class Primfaktorzerlegung {
             break;
         }
         while (multiplikator2neu == 1) {
-            System.out.println("Es handelt sich um eine Primzahl, bei der keine Primfaktorzerlegung möglich ist");
+            System.out.println("Es handelt sich um eine Primzahl, bei der keine w01.Primfaktorzerlegung möglich ist");
             break;
         }
     }

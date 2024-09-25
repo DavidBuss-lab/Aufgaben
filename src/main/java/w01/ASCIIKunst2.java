@@ -1,3 +1,5 @@
+package w01;
+
 import java.util.Scanner;
 
 public class ASCIIKunst2 {

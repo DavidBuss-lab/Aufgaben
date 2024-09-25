@@ -1,3 +1,5 @@
+package w01;
+
 public class Arithmetischeoperationen {
     public static void main(String[] args) {
         int Var1 = 10;
