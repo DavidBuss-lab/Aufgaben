@@ -5,8 +5,15 @@ public class Rückwärtsausgeben {
         Scanner sc = new Scanner(System.in);
         System.out.println("Gebe eine Zahl an, die Rückwärts ausgegeben werden soll:");
         String zahl = sc.nextLine();
-        zahl = new StringBuffer(zahl).reverse().toString();
-        System.out.println(zahl);
+        String ergebnis = "";
+        int currentl = zahl.length() - 1;
+
+        while (currentl >= 0) {
+            ergebnis = ergebnis + zahl.charAt(currentl);
+            currentl--;
+        }
+        System.out.println(ergebnis);
+
 
         System.out.println("Bitte noch eine Zahl eingeben");
         int zahl2 = sc.nextInt();
