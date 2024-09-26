@@ -19,8 +19,16 @@ public class Sortieren {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int [] zahl =  {10,3,11,9,22,4,30000,-12,33};
-        int position = 0;
+
+        System.out.println("wähle Aus, wie viele Zahlen du eingeben möchtest");
+        int n = sc.nextInt();
+        int [] zahl = new int [n];
+
+        for (int i = 0; i < n; i++) {
+            System.out.println ("Zahl " + (i + 1) + ": ");
+            int eingabe = sc.nextInt();
+            zahl[i] = eingabe;
+        }
 
         System.out.println("Schleife vor der Sortierung:");
         for (int w = 0; w < zahl.length; w++) {
@@ -32,6 +40,5 @@ public class Sortieren {
         for (int q=0; q < zahl.length; q++) {
             System.out.print(zahl[q] + " ");
         }
-
     }
 }
