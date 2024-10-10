@@ -70,11 +70,11 @@ public class VierGewinnt {
         for (int i = 0; i < 6; i++) {
             if (wert[i][x] == spieler) {
                 maxreihe++;
-            } else if (maxreihe != 4 && wert[i][x] != spieler) {
+            } else if (maxreihe < 4 && wert[i][x] != spieler) {
                 maxreihe = 0;
             }
         }
-        if (maxreihe == 4) {
+        if (maxreihe >= 4) {
             System.out.println("\n" + farbe + name + "\u001b[0m hat das Spiel gewonnen");
             return true;
         }
@@ -84,11 +84,11 @@ public class VierGewinnt {
         for (int i = 0; i < 7; i++) {
             if (wert[y][i] == spieler) {
                 maxreihe++;
-            } else if (maxreihe != 4 && wert[y][i] != spieler) {
+            } else if (maxreihe < 4 && wert[y][i] != spieler) {
                 maxreihe = 0;
             }
         }
-        if (maxreihe == 4) {
+        if (maxreihe >= 4) {
             System.out.println("\n" + farbe + name + "\u001b[0m hat das Spiel gewonnen");
             return true;
         }
@@ -126,12 +126,12 @@ public class VierGewinnt {
         for (i = i; i < max; i++) {
             if (wert[i][j] == spieler) {
                 maxreihe++;
-            } else if (maxreihe != 4 && wert[i][j] != spieler) {
+            } else if (maxreihe < 4 && wert[i][j] != spieler) {
                 maxreihe = 0;
             }
             j++;
         }
-        if (maxreihe == 4) {
+        if (maxreihe >= 4) {
             System.out.println("\n" + farbe + name + "\u001b[0m hat das Spiel gewonnen");
             return true;
         } else {
@@ -145,13 +145,13 @@ public class VierGewinnt {
             if (j < 7) {
                 if (wert[i][j] == spieler) {
                     maxreihe++;
-                } else if (maxreihe != 4 && wert[i][j] != spieler) {
+                } else if (maxreihe < 4 && wert[i][j] != spieler) {
                     maxreihe = 0;
                 }
                 j++;
             }
         }
-        if (maxreihe == 4) {
+        if (maxreihe >= 4) {
             System.out.println("\n" + farbe + name + "\u001b[0m hat das Spiel gewonnen");
             return true;
         } else {
